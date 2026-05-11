@@ -1,0 +1,276 @@
+version: "1.0"
+last_updated: "2026-01-15"
+
+# =============================================================================
+# VERIFIED COMPANY SOURCES (High Trust - Known 10-200 Headcount)
+# =============================================================================
+sources:
+  - source_id: "cmp_001"
+    source_name: "Buffer Careers"
+    source_type: "company_page"
+    source_family: "greenhouse"
+    api_url: "https://boards-api.greenhouse.io/v1/boards/buffer/jobs"
+    company_name: "Buffer"
+    company_domain: "buffer.com"
+    headcount_bucket: "51 to 100"
+    hq_country: "United States"
+    target_market_fit: "high"
+    trust_score: 98
+    enabled: true
+    notes: "Remote-first, B2B SaaS"
+
+  - source_id: "cmp_002"
+    source_name: "Doist Careers"
+    source_type: "company_page"
+    source_family: "lever"
+    api_url: "https://api.lever.co/v0/postings/doist"
+    company_name: "Doist"
+    company_domain: "doist.com"
+    headcount_bucket: "51 to 100"
+    hq_country: "Spain"
+    target_market_fit: "high"
+    trust_score: 97
+    enabled: true
+    notes: "Fully distributed, SaaS"
+
+  - source_id: "cmp_003"
+    source_name: "Basecamp Careers"
+    source_type: "company_page"
+    source_family: "lever"
+    api_url: "https://api.lever.co/v0/postings/basecamp"
+    company_name: "Basecamp"
+    company_domain: "basecamp.com"
+    headcount_bucket: "51 to 100"
+    hq_country: "United States"
+    target_market_fit: "high"
+    trust_score: 96
+    enabled: true
+    notes: "Remote-first, Project Mgmt"
+
+  - source_id: "cmp_004"
+    source_name: "Pleo Careers"
+    source_type: "company_page"
+    source_family: "greenhouse"
+    api_url: "https://boards-api.greenhouse.io/v1/boards/pleo/jobs"
+    company_name: "Pleo"
+    company_domain: "pleo.io"
+    headcount_bucket: "101 to 200"
+    hq_country: "Denmark"
+    target_market_fit: "high"
+    trust_score: 94
+    enabled: true
+    notes: "Fintech SaaS"
+
+  - source_id: "cmp_005"
+    source_name: "Fathom Analytics"
+    source_type: "company_page"
+    source_family: "custom"
+    board_url: "https://usefathom.com/careers"
+    company_name: "Fathom Analytics"
+    company_domain: "usefathom.com"
+    headcount_bucket: "10 to 50"
+    hq_country: "Canada"
+    target_market_fit: "high"
+    trust_score: 92
+    enabled: true
+    notes: "Privacy Analytics"
+
+  - source_id: "cmp_006"
+    source_name: "Plausible Analytics"
+    source_type: "company_page"
+    source_family: "custom"
+    board_url: "https://plausible.io/careers"
+    company_name: "Plausible Analytics"
+    company_domain: "plausible.io"
+    headcount_bucket: "10 to 50"
+    hq_country: "Spain"
+    target_market_fit: "high"
+    trust_score: 91
+    enabled: true
+    notes: "Open Source Analytics"
+
+  - source_id: "cmp_007"
+    source_name: "Ghost Careers"
+    source_type: "company_page"
+    source_family: "greenhouse"
+    api_url: "https://boards-api.greenhouse.io/v1/boards/ghost/jobs"
+    company_name: "Ghost"
+    company_domain: "ghost.org"
+    headcount_bucket: "10 to 50"
+    hq_country: "Singapore"
+    target_market_fit: "high"
+    trust_score: 95
+    enabled: true
+    notes: "Open Source Publishing"
+
+  - source_id: "cmp_008"
+    source_name: "Supermove Careers"
+    source_type: "company_page"
+    source_family: "greenhouse"
+    api_url: "https://boards-api.greenhouse.io/v1/boards/supermove/jobs"
+    company_name: "Supermove"
+    company_domain: "supermove.com"
+    headcount_bucket: "10 to 50"
+    hq_country: "United States"
+    target_market_fit: "high"
+    trust_score: 90
+    enabled: true
+    notes: "PropTech"
+
+  - source_id: "cmp_009"
+    source_name: "Pleo Careers"
+    source_type: "company_page"
+    source_family: "greenhouse"
+    api_url: "https://boards-api.greenhouse.io/v1/boards/pleo/jobs"
+    company_name: "Pleo"
+    company_domain: "pleo.io"
+    headcount_bucket: "101 to 200"
+    hq_country: "Denmark"
+    target_market_fit: "high"
+    trust_score: 94
+    enabled: true
+    notes: "Fintech"
+
+  - source_id: "cmp_010"
+    source_name: "Front Careers"
+    source_type: "company_page"
+    source_family: "greenhouse"
+    api_url: "https://boards-api.greenhouse.io/v1/boards/frontapp/jobs"
+    company_name: "Front"
+    company_domain: "front.com"
+    headcount_bucket: "101 to 200"
+    hq_country: "France"
+    target_market_fit: "high"
+    trust_score: 93
+    enabled: true
+    notes: "Communication Platform"
+
+# =============================================================================
+# REMOTE JOB BOARDS (Medium Trust - Requires Filtering)
+# =============================================================================
+  - source_id: "rm_001"
+    source_name: "Remotive API"
+    source_type: "board_api"
+    source_family: "remotive"
+    api_url: "https://remotive.com/api/remote-jobs?category=software-dev"
+    company_name: null
+    company_domain: null
+    headcount_bucket: null
+    hq_country: null
+    target_market_fit: "high"
+    trust_score: 78
+    enabled: true
+    notes: "Filter for worldwide"
+
+  - source_id: "ro_001"
+    source_name: "RemoteOK API"
+    source_type: "board_api"
+    source_family: "remoteok"
+    api_url: "https://remoteok.com/api"
+    company_name: null
+    company_domain: null
+    headcount_bucket: null
+    hq_country: null
+    target_market_fit: "high"
+    trust_score: 75
+    enabled: true
+    notes: "Parse tags for worldwide"
+
+  - source_id: "hm_001"
+    source_name: "Himalayas API"
+    source_type: "board_api"
+    source_family: "himalayas"
+    api_url: "https://himalayas.app/api/jobs?category=engineering&remote=true"
+    company_name: null
+    company_domain: null
+    headcount_bucket: null
+    hq_country: null
+    target_market_fit: "high"
+    trust_score: 82
+    enabled: true
+    notes: "Good filtering"
+
+# =============================================================================
+# COMPANY REGISTRY FOR HEADCOUNT VERIFICATION
+# =============================================================================
+company_registry:
+  - domain: "buffer.com"
+    name: "Buffer"
+    headcount_bucket: "51 to 100"
+    hq_country: "United States"
+    target_markets: ["United States", "Canada", "United Kingdom", "Australia"]
+    company_type: "B2B SaaS"
+    verified: true
+    last_verified: "2026-01-10"
+    
+  - domain: "doist.com"
+    name: "Doist"
+    headcount_bucket: "51 to 100"
+    hq_country: "Spain"
+    target_markets: ["Global"]
+    company_type: "SaaS"
+    verified: true
+    last_verified: "2026-01-08"
+    
+  - domain: "basecamp.com"
+    name: "Basecamp"
+    headcount_bucket: "51 to 100"
+    hq_country: "United States"
+    target_markets: ["United States", "Global"]
+    company_type: "B2B SaaS"
+    verified: true
+    last_verified: "2026-01-12"
+    
+  - domain: "pleo.io"
+    name: "Pleo"
+    headcount_bucket: "101 to 200"
+    hq_country: "Denmark"
+    target_markets: ["United Kingdom", "Germany", "Netherlands"]
+    company_type: "Fintech"
+    verified: true
+    last_verified: "2026-01-05"
+    
+  - domain: "usefathom.com"
+    name: "Fathom Analytics"
+    headcount_bucket: "10 to 50"
+    hq_country: "Canada"
+    target_markets: ["Global"]
+    company_type: "SaaS"
+    verified: true
+    last_verified: "2026-01-14"
+    
+  - domain: "plausible.io"
+    name: "Plausible Analytics"
+    headcount_bucket: "10 to 50"
+    hq_country: "Spain"
+    target_markets: ["Global"]
+    company_type: "SaaS"
+    verified: true
+    last_verified: "2026-01-14"
+
+  - domain: "ghost.org"
+    name: "Ghost"
+    headcount_bucket: "10 to 50"
+    hq_country: "Singapore"
+    target_markets: ["Global"]
+    company_type: "Open Source"
+    verified: true
+    last_verified: "2026-01-14"
+
+  - domain: "supermove.com"
+    name: "Supermove"
+    headcount_bucket: "10 to 50"
+    hq_country: "United States"
+    target_markets: ["United States"]
+    company_type: "PropTech"
+    verified: true
+    last_verified: "2026-01-14"
+
+  - domain: "front.com"
+    name: "Front"
+    headcount_bucket: "101 to 200"
+    hq_country: "France"
+    target_markets: ["Global"]
+    company_type: "SaaS"
+    verified: true
+    last_verified: "2026-01-14"
